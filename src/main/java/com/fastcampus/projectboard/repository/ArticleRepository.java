@@ -1,4 +1,7 @@
 package com.fastcampus.projectboard.repository;
 
-public interface ArticleRepository extends org.springframework.data.jpa.repository.JpaRepository<com.fastcampus.projectboard.domain.Article, java.lang.Long> {
-  }
+import com.fastcampus.projectboard.domain.Article;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ArticleRepository extends JpaRepository<Article, Long> {
+}
